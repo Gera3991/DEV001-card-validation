@@ -1,8 +1,9 @@
 const validator = {
-isValid : function(NumberCardinput) {
-  const reverseInput = NumberCardinput.tostring().split('').reverse().map(Number);
-  console.log(reverseInput)
+ isValid : function(CreditCardNumber){
+
+  let value = CreditCardNumber.reverse();
+  console.log('su tarjeta es valida' + value)
+
+  
 }
 };
-
-export default validator;
