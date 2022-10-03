@@ -2,5 +2,14 @@ import validator from './validator.js';
 
 console.log(validator);
 
-const input = document.getElementById("number-card-input");
-const boton = document.getElementById("boton-validar");
+let inputCard= document.getElementById("NumberCardInput");
+let button= document.getElementById("BotonValidar");
+
+  
+// MASKIFY
+function maskify() {
+    let input= document.getElementById('NumberCardInput').value;
+    validator.maskify(inputCard);
+    }
+
+    
