@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+
+  <title></title>
+</head>
+<body>
+  <form class="form">
+    <h2 class="form-title">Bienvenidos Stiptop</h2>
+    <p class="form-paragraph">Te ayudas a llevar el registro de todas tus tarjetas y movimientos en línea</p>
+
+    <div class="form-container">
+      <div class="form-group">
+        <input type="number" maxlength="16" id="NumberCardInput" class="form-input" placeholder=" ">
+        <label for="number card" class="form-label">Número de tarjetas</label>
+        <span class="form-line"></span>
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="name-card" class="form-input" placeholder=" ">
+        <label for="name card" class="form-label">Nombre de la tarjeta</label>
+        <span class="form-line"></span>
+      </div>
+
+
+     <button class="form-submit" id="boton-validar"> Validar</button>
+
+    </div>
+
+    
+  
+</body>
+<script src="index.js"></script>
 </html>
