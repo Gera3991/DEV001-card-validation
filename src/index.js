@@ -1,23 +1,22 @@
 import validator from './validator.js';
-  
-document.getElementById("botonvalidar").addEventListener("click", CreditCardNumber);
-const value = document.getElementsByName("CreditCardNumber")
+console.log(validator);
 
-//Función para almacenar el numero de tarjeta que incluye el algoritmo de luhn
-    let inputValue = Array.from(document.getElementById("CreditCardNumber").value.replace(/\D/g, '')); 
-  
-  
-    let luhn = validator.isValid(inputValue);
-    console.log(luhn);
-    
-  
-  
-      if (luhn == true){
-        console.log(checked);
-        checked.classList.remove("hide");
-      } else if (luhn == false) {
-        console.log(wrong);
-        wrong.classList.remove("hide");
-      }
-  
-  
+
+// const ok = document.getElementsByTagName("img")[1];    - esto  no  funciona hasta que no le de uso
+// const error = document.getElementsByTagName("img")[2]; - esto  no  funciona hasta que no le de uso
+
+//Se añade evento de click para confirmr 
+document.getElementById("submitcard").addEventListener("click", creditCardNumber);
+
+//Función para atrapar el numero de tarjeta que incluye el algoritmo de luhn
+function creditCardNumber() {
+  let creditCardNumber = Array.from(document.getElementById("cc-number").value.replace(/\D/g, '')); 
+
+
+  let luhn = validator.isValid(creditCardNumber);
+  console.log(luhn);
+
+}
+
+
+

@@ -1,38 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" />
+<html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <title>Validación tarjeta crédito</title>
+            <link rel="stylesheet" href="style.css" />
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <script defer type="module" src="./index.js"></script>
+        </head>
+        <body>
+            <div class="container">
+              <h1>Bienvenido a Start Wallet</h1>
+              <form action="#" id="form-card">
+                <div class="input">
+                  <label for="">Ingresa nombre de la tarjeta</label>
+                  <input type="text" id="nombre" name="nombre_tarjeta">
+                </div>
 
-  <title></title>
-</head>
-<body>
-  <form class="form">
-    <h2 class="form-title">Bienvenidos Stiptop</h2>
-    <p class="form-paragraph">Te ayudas a llevar el registro de todas tus tarjetas y movimientos en línea</p>
+                <div class="input">
+                  <label for="">Ingresa número de la tarjeta</label>
+                  <input type="number" maxlength="16" id="cc-number" name="cc-number">
+                  <span class="verificado">
+                    <img id="ok" class="hide" src="./img/OK IMG.svg">
+						        <img id= "errror" class="hide" src="./img/ERROR MG.svg">
+                    </span>
+                </div>
 
-    <div class="form-container">
-      <div class="form-group">
-        <input id="CreditCardNumber" class="form-input" value=""placeholder="0000 0000 0000 0000" required>
-        <label for="number card" class="form-label">Número de tarjetas</label>
-        <span class="form-line"></span>
-      </div>
+                <div class="input-group">
+                  <div class="input">
+                    <label for="">Mes de vencimiento</label>
+                    <select name="month" id="">
+                      <option value="#">Seleccione mes</option>
+                      <option value="enero">Enero</option>
+                      <option value="febrero">Febrero</option>
+                      <option value="Marzo">Marzo</option>
+                      <option value="abril">Abril</option>
+                      <option value="mayo">Mayo</option>
+                      <option value="junio">Junio</option>
+                      <option value="julio">Julio</option>
+                      <option value="agosto">Agosto</option>
+                      <option value="septiembre">Septiembre</option>
+                      <option value="octubre">Octubre</option>
+                      <option value="noviembre">Noviembre</option>
+                      <option value="diciembre">Diciembre</option>
+                      <option value="diciembre">Diciembre</option>
+                    
+                    </select>
+                  </div>
 
-      <div class="form-group">
-        <input type="text" id="name-card" class="form-input" placeholder="Geraldine Valdés M " required></input>
-        <label for="name card" class="form-label">Nombre de la tarjeta</label>
-        <span class="form-line"></span>
-      </div>
-
-
-     <button class="form-submit" id="botonvalidar"> Validar</button>
-
-    </div>
-
-    
-  
-</body>
-<script src="index.js"></script>
-</html>
+                  <div class="input">
+                    <label for="">Año de vencimiento</label>
+                    <select name="month" id="">
+                      <option value="#">Seleccione Año</option>
+                      <option value="2023">2023</option>
+                      <option value="2023">2023</option>
+                      <option value="2023">2023</option>
+                    </select>
+                  </div>                  
+                </div>
+                
+                <button type="submit" id="submitcard">Confirmar Validación</button>
+              </form>
+            </div>
+        </body>
+    </html>
