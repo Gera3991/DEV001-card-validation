@@ -83,3 +83,7 @@ form button {
   width: 221px;
   border: none;
 }
+
+form.hide {
+  display: none;
+}

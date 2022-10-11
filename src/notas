@@ -18,3 +18,20 @@
    // } else if (luhn == false) {
    //   console.log(wrong);
    //   wrong.classList.remove("hide");
+
+
+ // }
+  // si el último digito es superior a 0 es invalido
+  // si es  igual a 0 es valido
+
+ // if (sum, "si el último digito es superior a 0"){
+    return false
+ // }
+  //else if (sum, "si el digito es igual a 0"){
+    return true
+  //}
+  
+  //Return boolean
+
+//},
+//}

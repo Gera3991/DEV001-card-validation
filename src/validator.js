@@ -1,45 +1,30 @@
 const validator = {
-  // creditCardNumber entra como un array ordendo y depurado
-
   isValid : function(creditCardNumber){
+    if (creditCardNumber == null) {
+      return false;
+    }
 
-    let value = creditCardNumber.reverse();
-  
-      for (let i=0; i<value.length; i++){
-        
-        if (i%2 != 0){ // si el indice esta en posicion par
-          value[i] = value[i] * 2; //multiplica el valor en el indice x 2
-        
-  
-        if (value[i] > 9){ //si el valor del indice es mayor a 9
-            value[i] = parseInt(String(value[i]).charAt(0)) + parseInt(String(value[i]).charAt(1))
-            //el valor del indice es igual a la suma de sus digitos (12 = 1 + 2 = 3)
-                
-            
-          }
-  
-        }
-      
+    if (creditCardNumber.length == 0) {
+      return false;
+    }
+
+    try {
+      var sumTable = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9], [0, 2, 4, 6, 8, 1, 3, 5, 7, 9]];
+      var sum = 0, flip = 0;
+
+      for (var i = creditCardNumber.length - 1; i >= 0; i--, flip++) {
+          sum += sumTable[flip & 0x1][parseInt(creditCardNumber.charAt(i))];
       }
 
-    let sum = 0;
+      return ((sum % 10) == 0);
 
-      for (let i=1; i<value.length; i++){
-        sum += parseInt(value[i]); //va sumando los valores del indice (mientra convoierte el array)
-        console.log(sum);
-      }
-      // si el último digito es superior a 0 es invalido
-      // si es  igual a 0 es valido
+    } catch (e) {
+      return false;
+    }    
+  },
+  maskify: function(creditCardNumber) {
+    return creditCardNumber.slice(0,-4).replace(/./g, "#") + creditCardNumber.slice(-4);
+  }
+};
 
-      if (sum, ("si el último digito es superior a 0"){
-        return false
-      }
-      else if (sum, "si el digito es igual a 0"){
-        return true
-      }
-      
-      //Return boolean
-  
-},
-}
 export default validator;
