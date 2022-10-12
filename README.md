@@ -1,5 +1,9 @@
 # Tarjeta de crédito válida
-El proyecto de validación de tarjeta de crédito es una web app llamada Wallet Start donde el usuario podrá agregar a una billetera virtual sus tarjetas de crédito para compras en trasnportes públicos y comercios asociados. . Al momento de elegir el producto y darle click a "comprar" se pide el número de tarjeta de crédito para validar y continuar la compra.
+El proyecto de validación de tarjeta de crédito es una web app llamada Wallet Start donde el usuario podrá agregar a una billetera virtual sus tarjetas de crédito para transacciones en trasnporte público y comercios asociados. 
+
+# Interfaz usuario
+La interfaz de usuario es simple y minimalista, cuenta 1 formulario principal y 4 inputs para que el usuario ingrese los datos fundamentales y un botón para validar la tarjeta de crédito antes de agregarla a la wallet.
+
 ## Índice
 
 * [1. Objetivos de aprendizaje generales](#1-objetivos-de-aprendizaje-generales)
