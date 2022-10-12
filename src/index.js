@@ -15,6 +15,7 @@ function creditCardNumber() {
 
   if (luhn){
     console.log("Tarjeta valida");
+    alert("Tarjeta valida")
     
    
 
