@@ -1,8 +1,14 @@
 # Tarjeta de crédito válida
-El proyecto de validación de tarjeta de crédito es una web app llamada Wallet Start donde el usuario podrá agregar a una billetera virtual sus tarjetas de crédito para transacciones en trasnporte público y comercios asociados. 
+El proyecto de validación de tarjeta de crédito es una web app llamada Wallet Start donde el usuario podrá agregar a una billetera virtual sus tarjetas de crédito para transacciones en transporte público y comercios asociados. 
 
 # Interfaz usuario
 La interfaz de usuario es simple y minimalista, cuenta 1 formulario principal y 4 inputs para que el usuario ingrese los datos fundamentales y un botón para validar la tarjeta de crédito antes de agregarla a la wallet.
+
+# Usuario
+Personas que desean utilizar apps para generar pagos sin necesidad de poseer un material fisico para estas transacciones.
+
+# ¿Qué problemas y/o necesidades soluciona? 
+La app web Star Waller resuelve la complejidad y vulnerabilidad de pagar en el transporte publico con una tarjeta fisica, ya que esta se puede perder facilmente y hasta bloquear en ocaciones donde falla el sistema. Facilita el acceso rápido a este, sin filas ni demoras.
 
 ## Índice
 
