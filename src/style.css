@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url(src/img/fondo-back.PNG);
+  background color: #142CBC;
   background-size: 100%;
   display: flex;
   font-family: 'Roboto', sans-serif;
