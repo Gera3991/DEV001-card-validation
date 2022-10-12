@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  
+        <head>
+            <meta charset="utf-8">
+            <title>Validación tarjeta crédito</title>
+            <link rel="stylesheet" href="style.css" />
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <script defer type="module" src="./index.js"></script>
+        </head>
+        <body>
+            <div class="container">
+              <h1>Bienvenido a Start Wallet</h1>
+              <form action="#" id="form-card">
+                <div class="input">
+                  <label for="">Ingresa número de la tarjeta</label>
+                  <input type="text" maxlength="16" id="cc-number">
+              
+                </div>
+
+                <div class="input">
+                  <label for="" requiered>Ingresa nombre de la tarjeta</label>
+                  <input type="text" id="nombre" name="nombre_tarjeta">
+                </div>
+
+                <div class="input-group">
+                  <div class="input">
+                    <label for="">Mes de vencimiento</label>
+                    <select name="month" id="">
+                      <option value="#">Seleccione mes</option>
+                      <option value="enero">Enero</option>
+                      <option value="febrero">Febrero</option>
+                      <option value="Marzo">Marzo</option>
+                      <option value="abril">Abril</option>
+                      <option value="mayo">Mayo</option>
+                      <option value="junio">Junio</option>
+                      <option value="julio">Julio</option>
+                      <option value="agosto">Agosto</option>
+                      <option value="septiembre">Septiembre</option>
+                      <option value="octubre">Octubre</option>
+                      <option value="noviembre">Noviembre</option>
+                      <option value="diciembre">Diciembre</option>
+                      <option value="diciembre">Diciembre</option>
+                    
+                    </select>
+                  </div>
+
+                  <div class="input">
+                    <label for="">Año de vencimiento</label>
+                    <select name="month" id="">
+                      <option value="#">Seleccione Año</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2029</option>
+                      <option value="2029">2029</option>
+
+                    </select>
+                  </div>                  
+                </div>
+                
+                <button type="submit" id="submitcard">Confirmar Validación</button>
+              </form>
+            </div>
+        </body>
+         </html>
