@@ -21,5 +21,7 @@ function creditCardNumber() {
 
   } else {
     console.log("Tarjeta invalida");
+        alert("Tarjeta invalida")
+
   }
 }
