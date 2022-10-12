@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url('img/fondo-back.png');
+  background: url(./img/fondo-back.PNG);
   background-size: 100%;
   display: flex;
   font-family: 'Roboto', sans-serif;
