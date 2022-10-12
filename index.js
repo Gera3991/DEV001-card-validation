@@ -15,10 +15,13 @@ function creditCardNumber() {
 
   if (luhn){
     console.log("Tarjeta valida");
+    alert("Tarjeta valida")
     
    
 
   } else {
     console.log("Tarjeta invalida");
+    alert("Tarjeta invalida")
+
   }
 }
