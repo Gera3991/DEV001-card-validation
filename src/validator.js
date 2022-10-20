@@ -1,10 +1,10 @@
 const validator = {
   isValid : function(creditCardNumber){
-    if (creditCardNumber == null) {
+    if (creditCardNumber == null) { // Sí "cc" es nula te la muestra como invalida.
       return false;
     }
 
-    if (creditCardNumber.length == 0) {
+    if (creditCardNumber.length == 0) { // Sí la amplitud de la cc es 0 también es invalida.
       return false;
     }
 
